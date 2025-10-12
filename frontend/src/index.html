@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Todo List</h1>
+        </header>
+        
+        <main>
+            <section class="todo-form">
+                <form id="addTodoForm">
+                    <input type="text" id="todoInput" placeholder="새로운 할 일을 입력하세요..." required>
+                    <button type="submit">추가</button>
+                </form>
+            </section>
+            
+            <section class="todo-list">
+                <ul id="todoList" class="todos">
+                    <!-- 동적으로 생성될 투두 아이템들 -->
+                </ul>
+            </section>
+            
+            <section class="todo-stats">
+                <div class="stats">
+                    <span id="totalCount">전체: 0</span>
+                    <span id="completedCount">완료: 0</span>
+                    <span id="pendingCount">남은 것: 0</span>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="scripts/api.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
