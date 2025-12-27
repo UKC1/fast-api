@@ -20,6 +20,11 @@ class TodoAPI {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             
+            // 204 No Content인 경우 JSON 파싱하지 않음
+            if (response.status === 204) {
+                return null;
+            }
+            
             return await response.json();
         } catch (error) {
             console.error('API request failed:', error);
