@@ -1,0 +1,112 @@
+{
+  "10": {
+    "json": {
+      "encode_ms": 0.093,
+      "decode_ms": 0.056,
+      "total_ms": 0.149,
+      "size_bytes": 3985
+    },
+    "orjson": {
+      "encode_ms": 0.012,
+      "decode_ms": 0.037,
+      "total_ms": 0.049,
+      "size_bytes": 3636,
+      "speedup_vs_json": 12.22
+    },
+    "ujson": {
+      "encode_ms": 0.031,
+      "decode_ms": 0.047,
+      "total_ms": 0.078,
+      "size_bytes": 3636,
+      "speedup_vs_json": 5.99
+    }
+  },
+  "100": {
+    "json": {
+      "encode_ms": 0.367,
+      "decode_ms": 0.461,
+      "total_ms": 0.828,
+      "size_bytes": 40315
+    },
+    "orjson": {
+      "encode_ms": 0.069,
+      "decode_ms": 0.231,
+      "total_ms": 0.3,
+      "size_bytes": 36816,
+      "speedup_vs_json": 4.09
+    },
+    "ujson": {
+      "encode_ms": 0.333,
+      "decode_ms": 0.468,
+      "total_ms": 0.801,
+      "size_bytes": 36816,
+      "speedup_vs_json": 0.8
+    }
+  },
+  "1000": {
+    "json": {
+      "encode_ms": 4.257,
+      "decode_ms": 4.912,
+      "total_ms": 9.169,
+      "size_bytes": 408115
+    },
+    "orjson": {
+      "encode_ms": 1.034,
+      "decode_ms": 2.718,
+      "total_ms": 3.752,
+      "size_bytes": 373116,
+      "speedup_vs_json": 3.59
+    },
+    "ujson": {
+      "encode_ms": 3.665,
+      "decode_ms": 3.605,
+      "total_ms": 7.27,
+      "size_bytes": 373116,
+      "speedup_vs_json": 0.94
+    }
+  },
+  "5000": {
+    "json": {
+      "encode_ms": 20.195,
+      "decode_ms": 19.449,
+      "total_ms": 39.644,
+      "size_bytes": 2062782
+    },
+    "orjson": {
+      "encode_ms": 4.053,
+      "decode_ms": 13.195,
+      "total_ms": 17.248,
+      "size_bytes": 1887783,
+      "speedup_vs_json": 6.0
+    },
+    "ujson": {
+      "encode_ms": 13.593,
+      "decode_ms": 19.966,
+      "total_ms": 33.559,
+      "size_bytes": 1887783,
+      "speedup_vs_json": 2.46
+    }
+  },
+  "10000": {
+    "json": {
+      "encode_ms": 29.499,
+      "decode_ms": 39.542,
+      "total_ms": 69.041,
+      "size_bytes": 4131115
+    },
+    "orjson": {
+      "encode_ms": 6.849,
+      "decode_ms": 28.65,
+      "total_ms": 35.499,
+      "size_bytes": 3781116,
+      "speedup_vs_json": 4.77
+    },
+    "ujson": {
+      "encode_ms": 26.066,
+      "decode_ms": 41.008,
+      "total_ms": 67.074,
+      "size_bytes": 3781116,
+      "speedup_vs_json": 1.07
+    }
+  }
+}

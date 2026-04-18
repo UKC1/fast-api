@@ -1,0 +1,18 @@
+# 🔰 Minimal FastAPI Template - Dependencies
+# 최소한의 의존성으로 빠른 시작
+
+# Core FastAPI
+fastapi>=0.121.1
+
+# ASGI Server  
+uvicorn[standard]>=0.38.0
+
+# Additional utilities (optional)
+python-multipart>=0.0.6  # For file uploads
+python-jose[cryptography]>=3.3.0  # For JWT tokens (if needed)
+
+# Development tools (optional)
+# pytest>=7.4.0
+# httpx>=0.28.0  # For testing async clients
+# black>=23.0.0  # Code formatting
+# flake8>=6.0.0  # Linting
